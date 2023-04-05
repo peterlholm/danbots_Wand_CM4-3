@@ -21,7 +21,7 @@ CAMERA_HIGHT = 11.0     # CH Camera height from projector center
 # mirror
 
 MIRROR_ANGLE = 30                       # v  Mirror angle to lodret
-MIRROR_ANGLE_SPOT = 90 - MIRROR_ANGLE   # to light
+#MIRROR_ANGLE_SPOT = 90 - MIRROR_ANGLE   # to light
 CAMERA_2_MIRROR = 9                     # L3 x distance from camera to mirrrortomm
 
 print("\nProjektor Basis Parameters")
@@ -48,7 +48,7 @@ print(f"Dist spot to dias\t{D:3} mm")
 #v = 90-2*MIRROR_ANGLE
 v = MIRROR_ANGLE
 #print("v",v)
-RAD= v / 180 * pi
+RAD= 2 * v / 180 * pi
 dx = cos(RAD) * D
 dy = sin(RAD) * D
 Sx = - CAMERA_2_MIRROR - dx
